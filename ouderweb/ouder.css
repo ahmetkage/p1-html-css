@@ -1,0 +1,10 @@
+/*algemene opaak*/
+* {
+    background-color: rgb(27, 163, 163);
+    color: rgb(0, 0, 0);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
