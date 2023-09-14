@@ -7,8 +7,9 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Goldman", cursive;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif , cursive;
   font-size: 21px;
+  background-color: #AAB19C;
 }
 
 nav {
@@ -19,7 +20,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
-  background: #00a8c7;
+  background: #657156;
   justify-content: space-between;
 }
 nav ul {
@@ -28,7 +29,7 @@ nav ul {
   list-style-type: none;
 }
 nav li {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 0 4rem 0 4rem;
 }
 nav a {
