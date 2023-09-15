@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TUI Boekingsformulier</title> 
+    <link rel="stylesheet" type="text/css" href="opdracht3.2.css">
 </head>
 <body>
-    
+    <h1>Boekingsformulier</h1>
+    <form action="verwerk.php" method="post">
+        <!-- Voornaam -->
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" name="voornaam" required pattern="[A-Za-z]+" placeholder="Alleen letters"><br><br>
+
+        <!-- Achternaam -->
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" name="achternaam" required pattern="[A-Za-z]+" placeholder="Alleen letters"><br><br>
+
+        <!-- Geslacht -->
+        <label for="geslacht">Geslacht:</label>
+        <input type="radio" id="man" name="geslacht" value="man" checked>
+        <label for="man">Man</label>
+        <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+        <label for="vrouw">Vrouw</label><br><br>
+
+        <!-- Adresgegevens -->
+        <label for="straat">Straat met huisnummer:</label>
+        <input type="text" id="straat" name="straat" required><br><br>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required><br><br>
+
+        <label for="stad">Stad:</label>
+        <input type="text" id="stad" name="stad" required><br><br>
+
+        <label for="land">Land:</label>
+        <select id="land" name="land" required>
+            <option value="Nederland">Nederland</option>
+            <option value="België">België</option>
+            <option value="Frankrijk">Frankrijk</option>
+            <option value="Japan">Japan</option>
+            <!-- Voeg hier andere landen toe -->
+        </select><br><br>
+
+        <!-- BSN-nummer -->
+        <label for="bsn">BSN-nummer (maximaal 9 cijfers):</label>
+        <input type="number" id="bsn" name="bsn" required max="999999999"><br><br>
+
+        <!-- Vakantieland -->
+        <label for="vakantieland">Vakantieland:</label>
+        <select id="vakantieland" name="vakantieland" required>
+            <option value="Spanje">Spanje</option>
+            <option value="Italië">Italië</option>
+            <option value="Griekenland">Griekenland</option>
+            <option value="Japan">Japan</option>
+            <option value="Noorwegen">Noorwegen</option>
+            <option value="Rusland">Rusland</option>
+            <!-- Voeg hier andere landen toe -->
+        </select><br><br>
+
+        <!-- Datum van vertrek -->
+        <label for="datemax">Datum van vertrek 2023-09-15:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  
+
+        <!-- Datum van terugkomst -->
+        <label for="terugkomstdatum">Datum van terugkomst:</label>
+        <input type="date" id="terugkomstdatum" name="terugkomstdatum" required><br><br>
+
+        <!-- Aantal reisgenoten -->
+        <label for="aantalReisgenoten">Aantal reisgenoten (maximaal 4):</label>
+        <input type="number" id="aantalReisgenoten" name="aantalReisgenoten" required min="0" max="4"><br><br>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Wachtwoord -->
+        <label for="wachtwoord">Wachtwoord (om account aan te maken):</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" required><br><br>
+
+        <!-- Verzendknop -->
+        <input type="submit" value="Boek nu">
+    </form>
 </body>
 </html>
+
+
