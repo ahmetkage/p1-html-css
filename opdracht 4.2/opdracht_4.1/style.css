@@ -1,0 +1,33 @@
+header {
+    width: 100vw;
+    min-height: 33vh;
+    background-image: url('./img/minecraft.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  header h1, header p {
+    color: rgb(255, 255, 255);
+  }
+  
+
+  img {
+    width: 50vw;
+  }
+  
+  article {
+    border: 2px solid #29e691;
+    border-radius: 12px;
+    padding: 5px;
+    border-left-width: 15px;
+  }
+  
+  article::before {
+    content: "";
+    height: 100%;
+    background-color: #1f2577b9;
+    position: absolute;
+  }
