@@ -6,4 +6,4 @@ function changecollor()
 function changecollor2() 
 {
     document.getElementById("kleur2").style.color = "red";
-}
+} 
